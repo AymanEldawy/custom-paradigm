@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html body {
+  direction: rtl;
+  text-align: right;
+}
+
+body {
+  background-color: hsl(0deg 0% 93%);
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+  max-width: 991px;
+  margin: 0 auto;
+}
+
+.form-container {
+  padding-top: 2rem;
+}
+.form-container > .form-group,
+.form-container > div[id^="row"] {
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 4px #0002;
+  margin-bottom: 1rem;
+}
+.form-row {
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-row .form-section,
+.form-row .form-group {
+  min-width: 250px;
+  flex: 1;
+}
+@media (min-width: 767px) {
+  #row1,
+  #row2 .form-section-grid,
+  #row4 .form-section-grid,
+  #row5 .form-section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(230px, 1fr));
+  }
+}
+.form-section-grid {
+  display: grid;
+  gap: 0.5em;
+}
+h3.form-section-title {
+  margin-bottom: 1rem;
+  border-right: 3px solid #444;
+  color: #444;
+  padding-right: 0.5rem;
+  font-size: 1.4rem;
+}
+.form-group {
+  display: flex;
+  align-items: center;
+}
+.form-group label {
+  background-color: #4caf50;
+  padding: 0.5rem;
+  color: #fff;
+  position: relative;
+}
+input {
+  padding: 0.5rem;
+  flex: 1;
+  background: #ededed;
+  border: none;
+  outline: 1px solid #a7a5a5;
+}
+label[data-item] {
+  position: relative;
+}
+label[data-item]:before {
+  position: absolute;
+  content: attr(data-item);
+  top: 0;
+  right: 0;
+  background: #4caf50;
+  height: 100%;
+  width: 20px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.8;
+}
+
+label[data-item] input {
+  padding-right: 30px;
+}
+input[type="file"] {
+  height: 33px;
+}
+/* .form-section-grid label,
+.form-section-grid label input, */
+.form-group input {
+  flex: 1;
+}
+.form-section-grid label input {
+  width: 100%;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 100px;
+  height: 80px;
+  padding: 2px;
+  object-fit: cover;
+}
+
+button#save {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  width: 140px;
+  cursor: pointer;
+}
+button#save:hover {
+  background-color: #53b3ff;
+}
+
+/* Media */
+.form-row .form-section {
+}

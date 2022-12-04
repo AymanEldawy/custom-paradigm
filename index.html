@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تعليم المبرز</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="form-container" id="formId">
+        <div class="form-row" id="row1">
+          <div class="form-group row">
+            <label for="">رقم البرنامج</label>
+            <input type="text" name="data[رقم_البرنامج]" />
+          </div>
+          <div class="form-group row">
+            <label for="">اسم البرنامج</label>
+            <input type="text" name="data[اسم_البرنامج]" />
+          </div>
+          <div class="form-group row">
+            <label for="">دورية التنفيذ </label>
+            <input type="text" name="data[دورية_التنفيذ]" />
+          </div>
+          <div class="form-group row">
+            <label for=""> المسؤول عن التنفيذ</label>
+            <input type="text" name="data[المسؤول_عن_التنفيذ]" />
+          </div>
+        </div>
+        <div class="form-section" id="row2">
+          <h3 class="form-section-title">أهداف البرنامج التفصيلية</h3>
+          <div class="form-section-grid">
+            <label for="" data-item="1">
+              <input type="text" name="data[أهداف_البرنامج][0]" />
+            </label>
+            <label for="" data-item="2">
+              <input type="text" name="data[أهداف_البرنامج][1]" />
+            </label>
+            <label for="" data-item="3">
+              <input type="text" name="data[أهداف_البرنامج][2]" />
+            </label>
+            <label for="" data-item="4">
+              <input type="text" name="data[أهداف_البرنامج][3]" />
+            </label>
+          </div>
+        </div>
+        <div class="form-row" id="row3">
+          <div class="form-section">
+            <h3 class="form-section-title">مؤشرات الأداء</h3>
+            <div class="form-section-grid">
+              <label for="" data-item="1">
+                <input type="text" name="data[مؤشرات_الأداء][0]" />
+              </label>
+              <label for="" data-item="2">
+                <input type="text" name="data[مؤشرات_الأداء][1]" />
+              </label>
+            </div>
+          </div>
+          <div class="form-section">
+            <h3 class="form-section-title">وصف البرنامج</h3>
+            <div class="form-section-grid">
+              <label for="" data-item="1">
+                <input type="text" name="data[وصف_البرنامج][0]" />
+              </label>
+              <label for="" data-item="2">
+                <input type="text" name="data[وصف_البرنامج][1]" />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for=""> التكلفة الاجمالية</label>
+          <input type="text" name="data[التكلفة_الاجمالية]" />
+        </div>
+        <div class="form-section" id="row4">
+          <h3 class="form-section-title">أوجه الصرف</h3>
+          <div class="form-section-grid">
+            <label for="" data-item="1">
+              <input type="text" name="data[أوجه_الصرف][0]" />
+            </label>
+            <label for="" data-item="2">
+              <input type="text" name="data[أوجه_الصرف][1]" />
+            </label>
+            <label for="" data-item="3">
+              <input type="text" name="data[أوجه_الصرف][2]" />
+            </label>
+            <label for="" data-item="4">
+              <input type="text" name="data[أوجه_الصرف][3]" />
+            </label>
+          </div>
+        </div>
+        <div class="form-section" id="row5">
+          <h3 class="form-section-title">الاطراف المستفيدة من البرنامج</h3>
+          <div class="form-section-grid">
+            <label for="" data-item="1">
+              <input
+                type="text"
+                name="data[الاطراف_المستفيدون_من_البرنامج][0]"
+              />
+            </label>
+            <label for="" data-item="2">
+              <input
+                type="text"
+                name="data[الاطراف_المستفيدون_من_البرنامج][1]"
+              />
+            </label>
+            <label for="" data-item="3">
+              <input
+                type="text"
+                name="data[الاطراف_المستفيدون_من_البرنامج][2]"
+              />
+            </label>
+            <label for="" data-item="4">
+              <input
+                type="text"
+                name="data[الاطراف_المستفيدون_من_البرنامج][3]"
+              />
+            </label>
+          </div>
+        </div>
+        <div class="form-row" id="row6">
+          <div class="form-group row">
+            <label for=""> تاريخ البداية</label>
+            <input type="date" name="data[تاريخ_البداية]" />
+          </div>
+          <div class="form-group row">
+            <label for=""> تاريخ النهاية</label>
+            <input type="date" name="data[تاريخ_النهاية]" />
+          </div>
+        </div>
+        <div class="form-row" id="row7">
+          <div class="form-section">
+            <h3 class="form-section-title">
+              المشاركون في التنفيذ من داخل المكتب
+            </h3>
+            <div class="form-section-grid">
+              <label for="" data-item="1">
+                <input
+                  type="text"
+                  name="data[المشاركون_في_التنفيذ_داخل_المكتب][0]"
+                />
+              </label>
+              <label for="" data-item="2">
+                <input
+                  type="text"
+                  name="data[المشاركون_في_التنفيذ_داخل_المكتب][1]"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="form-section">
+            <h3 class="form-section-title">
+              المشاركون في التنفيذ من خارج المكتب
+            </h3>
+            <div class="form-section-grid">
+              <label for="" data-item="1">
+                <input
+                  type="text"
+                  name="data[المشاركون_في_التنفيذ_خارج_المكتب][0]"
+                />
+              </label>
+              <label for="" data-item="2">
+                <input
+                  type="text"
+                  name="data[المشاركون_في_التنفيذ_خارج_المكتب][1]"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row" id="row8">
+          <div class="form-section">
+            <h3 class="form-section-title">المتحققة قبل التنفيذ</h3>
+            <div class="form-section-grid">
+              <label for="" data-item="1">
+                <input type="text" name="data[المتحققة_قبل_التنفيذ][0]" />
+              </label>
+              <label for="" data-item="2">
+                <input type="text" name="data[المتحققة_قبل_التنفيذ][1]" />
+              </label>
+              <label for="" data-item="3">
+                <input type="text" name="data[المتحققة_قبل_التنفيذ][2]" />
+              </label>
+            </div>
+          </div>
+          <div class="form-section">
+            <h3 class="form-section-title">المتحققة بعد التنفيذ</h3>
+            <div class="form-section-grid">
+              <label for="" data-item="1">
+                <input type="text" name="data[المتحققة_بعد_التنفيذ][0]" />
+              </label>
+              <label for="" data-item="2">
+                <input type="text" name="data[المتحققة_بعد_التنفيذ][1]" />
+              </label>
+              <label for="" data-item="3">
+                <input type="text" name="data[المتحققة_بعد_التنفيذ][2]" />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-row" id="row9">
+          <div class="form-section">
+            <h3 class="form-section-title">التوثيق</h3>
+            <div class="form-section-grid">
+              <label for="" data-item="1">
+                <input type="text" name="data[التوثيق][0]" />
+              </label>
+              <label for="" data-item="2">
+                <input type="text" name="data[التوثيق][1]" />
+              </label>
+              <label for="" data-item="3">
+                <input type="text" name="data[التوثيق][2]" />
+              </label>
+            </div>
+          </div>
+          <div class="form-section">
+            <h3 class="form-section-title">الموضوع</h3>
+            <div class="form-section-grid">
+              <label for="" data-item="1">
+                <input type="text" name="data[الموضوع][0]" />
+              </label>
+              <label for="" data-item="2">
+                <input type="text" name="data[الموضوع][1]" />
+              </label>
+              <label for="" data-item="3">
+                <input type="text" name="data[الموضوع][2]" />
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for=""> الصور</label>
+          <input type="file" multiple name="" id="inputFile" />
+        </div>
+        <div class="gallery"></div>
+      </form>
+      <button id="save">حفظ</button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
