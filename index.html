@@ -1,35 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>تعليم المبرز</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
       <form class="form-container" id="formId">
+        <div class="form-header">
+          <img
+          src="images/8ffd8b39-b1a8-4850-b16a-073170a3e80c.jpg"
+          alt=""
+          id="myLogo"
+          />
+          <button type="button" id="save">تحميل</button>
+        </div>
         <div class="form-row" id="row1">
           <div class="form-group row">
-            <label for="">رقم البرنامج</label>
+            <label for="">رقم_البرنامج</label>
             <input type="text" name="data[رقم_البرنامج]" />
           </div>
           <div class="form-group row">
-            <label for="">اسم البرنامج</label>
+            <label for="">اسم_البرنامج</label>
             <input type="text" name="data[اسم_البرنامج]" />
           </div>
           <div class="form-group row">
-            <label for="">دورية التنفيذ </label>
+            <label for="">دورية_التنفيذ </label>
             <input type="text" name="data[دورية_التنفيذ]" />
           </div>
           <div class="form-group row">
-            <label for=""> المسؤول عن التنفيذ</label>
+            <label for=""> المسؤول_عن_التنفيذ</label>
             <input type="text" name="data[المسؤول_عن_التنفيذ]" />
           </div>
         </div>
         <div class="form-section" id="row2">
-          <h3 class="form-section-title">أهداف البرنامج التفصيلية</h3>
+          <h3 class="form-section-title">أهداف_البرنامج_التفصيلية</h3>
           <div class="form-section-grid">
             <label for="" data-item="1">
               <input type="text" name="data[أهداف_البرنامج][0]" />
@@ -47,7 +55,7 @@
         </div>
         <div class="form-row" id="row3">
           <div class="form-section">
-            <h3 class="form-section-title">مؤشرات الأداء</h3>
+            <h3 class="form-section-title">مؤشرات_الأداء</h3>
             <div class="form-section-grid">
               <label for="" data-item="1">
                 <input type="text" name="data[مؤشرات_الأداء][0]" />
@@ -58,7 +66,7 @@
             </div>
           </div>
           <div class="form-section">
-            <h3 class="form-section-title">وصف البرنامج</h3>
+            <h3 class="form-section-title">وصف_البرنامج</h3>
             <div class="form-section-grid">
               <label for="" data-item="1">
                 <input type="text" name="data[وصف_البرنامج][0]" />
@@ -70,11 +78,11 @@
           </div>
         </div>
         <div class="form-group row">
-          <label for=""> التكلفة الاجمالية</label>
+          <label for=""> التكلفة_الاجمالية</label>
           <input type="text" name="data[التكلفة_الاجمالية]" />
         </div>
         <div class="form-section" id="row4">
-          <h3 class="form-section-title">أوجه الصرف</h3>
+          <h3 class="form-section-title">أوجه_الصرف</h3>
           <div class="form-section-grid">
             <label for="" data-item="1">
               <input type="text" name="data[أوجه_الصرف][0]" />
@@ -90,8 +98,8 @@
             </label>
           </div>
         </div>
-        <div class="form-section" id="row5">
-          <h3 class="form-section-title">الاطراف المستفيدة من البرنامج</h3>
+        <div class="form-section " id="row5">
+          <h3 class="form-section-title">الاطراف_المستفيدة_من_البرنامج</h3>
           <div class="form-section-grid">
             <label for="" data-item="1">
               <input
@@ -119,20 +127,20 @@
             </label>
           </div>
         </div>
-        <div class="form-row" id="row6">
+        <div class="form-row html2pdf__page-break" id="row6">
           <div class="form-group row">
-            <label for=""> تاريخ البداية</label>
+            <label for=""> تاريخ_البداية</label>
             <input type="date" name="data[تاريخ_البداية]" />
           </div>
           <div class="form-group row">
-            <label for=""> تاريخ النهاية</label>
+            <label for=""> تاريخ_النهاية</label>
             <input type="date" name="data[تاريخ_النهاية]" />
           </div>
         </div>
         <div class="form-row" id="row7">
           <div class="form-section">
             <h3 class="form-section-title">
-              المشاركون في التنفيذ من داخل المكتب
+              المشاركون_في_التنفيذ_من_داخل_المكتب
             </h3>
             <div class="form-section-grid">
               <label for="" data-item="1">
@@ -151,7 +159,7 @@
           </div>
           <div class="form-section">
             <h3 class="form-section-title">
-              المشاركون في التنفيذ من خارج المكتب
+              المشاركون_في_التنفيذ_من_خارج_المكتب
             </h3>
             <div class="form-section-grid">
               <label for="" data-item="1">
@@ -171,7 +179,7 @@
         </div>
         <div class="form-row" id="row8">
           <div class="form-section">
-            <h3 class="form-section-title">المتحققة قبل التنفيذ</h3>
+            <h3 class="form-section-title">المتحققة_قبل_التنفيذ</h3>
             <div class="form-section-grid">
               <label for="" data-item="1">
                 <input type="text" name="data[المتحققة_قبل_التنفيذ][0]" />
@@ -185,7 +193,7 @@
             </div>
           </div>
           <div class="form-section">
-            <h3 class="form-section-title">المتحققة بعد التنفيذ</h3>
+            <h3 class="form-section-title">المتحققة_بعد_التنفيذ</h3>
             <div class="form-section-grid">
               <label for="" data-item="1">
                 <input type="text" name="data[المتحققة_بعد_التنفيذ][0]" />
@@ -229,15 +237,29 @@
             </div>
           </div>
         </div>
-        <div class="form-group row">
+        <div class="form-group row" id="gallery">
           <label for=""> الصور</label>
           <input type="file" multiple name="" id="inputFile" />
         </div>
         <div class="gallery"></div>
       </form>
-      <button id="save">حفظ</button>
     </div>
-
-    <script src="main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+      integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/html2canvas.min.js"></script>
+    <!-- <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf-html2canvas@latest/dist/jspdf-html2canvas.min.js"></script> -->
+    <!-- <script src="js/Cairo-VariableFont_slnt,wght-bold.js" type="module"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>

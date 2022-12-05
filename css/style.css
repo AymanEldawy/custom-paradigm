@@ -2,14 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-align: right;
 }
-html body {
+html,
+body {
   direction: rtl;
   text-align: right;
 }
 
 body {
   background-color: hsl(0deg 0% 93%);
+  text-align: right;
 }
 
 .container {
@@ -21,6 +24,20 @@ body {
 
 .form-container {
   padding-top: 2rem;
+  max-width: 675px;
+  margin: 0 auto;
+}
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  background: #fff;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+.form-header img {
+  max-width: 150px;
 }
 .form-container > .form-group,
 .form-container > div[id^="row"] {
@@ -99,8 +116,6 @@ label[data-item] input {
 input[type="file"] {
   height: 33px;
 }
-/* .form-section-grid label,
-.form-section-grid label input, */
 .form-group input {
   flex: 1;
 }
@@ -110,16 +125,14 @@ input[type="file"] {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
 }
 .gallery img {
-  width: 100px;
-  height: 80px;
-  padding: 2px;
-  object-fit: cover;
+  max-width: 200;
 }
 
 button#save {
-  margin-top: 1rem;
   padding: 0.5rem 1rem;
   border: none;
   background-color: #2196f3;
@@ -128,11 +141,8 @@ button#save {
   border-radius: 0.5rem;
   width: 140px;
   cursor: pointer;
+  text-align: center;
 }
 button#save:hover {
   background-color: #53b3ff;
-}
-
-/* Media */
-.form-row .form-section {
 }
